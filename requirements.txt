@@ -1,0 +1,31 @@
+# --- هسته‌ی داده و مدل ---
+numpy
+pandas
+scipy
+scikit-learn
+torch
+transformers
+sentencepiece
+accelerate
+openpyxl          # برای خواندن slots.xlsx
+
+# --- RAG و جستجو ---
+qdrant-client
+rank_bm25
+
+# --- ارزیابی RAGAS و LLM ---
+ragas==0.3.1
+langchain-community>=0.3,<0.4
+langchain-google-genai
+langchain-huggingface
+datasets
+openai
+groq
+
+# --- رابط کاربری ---
+gradio
+
+# --- ابزارهای کمکی ---
+python-dotenv
+matplotlib
+seaborn

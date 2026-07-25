@@ -1,0 +1,782 @@
+[
+  {
+    "query_id": "2",
+    "user_query": "سلام، می‌خواستم اجاره خونه رو پرداخت کنم ولی یادم نیست دقیقاً چقدر توی کارت ۵۵۳۱۰۰۲۲۸۸۷۷۶۶۵۵ دارم. می‌شه چک کنی ببینم مبلغ ۵ میلیون تومن توش هست یا نه؟",
+    "expected_intent": "card_balance",
+    "variation": "normal"
+  },
+  {
+    "query_id": "6",
+    "user_query": "موجودی کارت ۶۰۳۷۴۴۵۵۶۶۷۷۸۸۹۹",
+    "expected_intent": "card_balance",
+    "variation": "normal"
+  },
+  {
+    "query_id": "10",
+    "user_query": "میشه چک کنی با کارت 6277112233445566 چه اتفاقاتی افتاده؟ تراکنشی ومده یا نه",
+    "expected_intent": "card_circulation",
+    "variation": "typo"
+  },
+  {
+    "query_id": "14",
+    "user_query": "تراکنش‌های کارت 5031234567890123 رو از 1402/06/01 تا 1402/06/15 بفرست",
+    "expected_intent": "card_circulation",
+    "variation": "typo"
+  },
+  {
+    "query_id": "15",
+    "user_query": "می‌شه ۱۰ میلیون تومن به این شماره شبا IR12012345678901234567890 انتقال بدی؟",
+    "expected_intent": "external_bank_shaba_transfer",
+    "variation": "normal"
+  },
+  {
+    "query_id": "21",
+    "user_query": "سقف کارت به کارتت تموم شده، میشه ۷ میلیون رو به این شبا بزنی؟ IR33221100998877665544332",
+    "expected_intent": "external_bank_shaba_transfer",
+    "variation": "normal"
+  },
+  {
+    "query_id": "23",
+    "user_query": "لطفا از حساب شماره کارت ۶۰۳۷۹۸۷۶۵۴۳۲۱۰۱۱ یک بسته اینترنت ماهانه ۲۰ گیگابایتی برای شماره ۰۹۱۲۱۱۱۲۲۳۳ خریداری نمایید.",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "24",
+    "user_query": "تورو خدا سریع کارت شماره ۶۲۱۵۳۴۵۶۷۸۹۰۱۲۳۴ رو ببندید، فکر کنم رمزم لو رفته!",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "27",
+    "user_query": "می‌خوام یه درخواستی بدم برای چک.",
+    "expected_intent": "check_registration",
+    "variation": "vague"
+  },
+  {
+    "query_id": "28",
+    "user_query": "لطفاً موجودی کارت ۶۰۳۷۹۸۰۰۱۲۳۴۵۶۷۸ را اعلام فرمایید.",
+    "expected_intent": "card_balance",
+    "variation": "normal"
+  },
+  {
+    "query_id": "35",
+    "user_query": "قبض گوشیم رو پرداخت کن.",
+    "expected_intent": "pay_phone_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "37",
+    "user_query": "قصد دارم قسط جاری تسهیلات کسب‌وکار خود را تسویه کنم. لطفاً مبلغ ۵,۰۰۰,۰۰۰ تومان را از موجودی حسابم کسر و پرداخت کنید.",
+    "expected_intent": "pay_installments",
+    "variation": "normal"
+  },
+  {
+    "query_id": "41",
+    "user_query": "خواهشمند است مبلغ یک میلیون و دویست هزار تومان را به شماره کارت 5031001234567890 انتقال دهید.",
+    "expected_intent": "transfer_card_to_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "42",
+    "user_query": "قسط وام ماشینمو پرداخت کن.",
+    "expected_intent": "pay_installments",
+    "variation": "normal"
+  },
+  {
+    "query_id": "43",
+    "user_query": "سریع یه شارژ ۱۰ تومنی برای ۰۹۱۲۹۹۹۸۸۷۷ بفرست.",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "45",
+    "user_query": "۱۰۰ تومن بزن به این کارت: 6037991234567890",
+    "expected_intent": "transfer_card_to_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "47",
+    "user_query": "میشه لطفاً از حسابم به کارت همسرم مبلغ ۷۵۰ هزار تومن منتقل کنی؟ شماره کارت اینه: 5031223344556677",
+    "expected_intent": "transfer_card_to_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "49",
+    "user_query": "اینجانب درخواست دارم مبلغ ۱۲۰ میلیون ریال از حساب شماره ۴۵۶۷۸۹۰۱۲۳۴ به شماره شبای IR88001122334455667788990 واریز گردد.",
+    "expected_intent": "external_bank_shaba_transfer",
+    "variation": "normal"
+  },
+  {
+    "query_id": "52",
+    "user_query": "میشه لطفاً یه شارژ ۱۰۰ هزار تومنی برای شماره رایتل ۰۹۲۳۴۵۶۷۸۹۰ بخری؟",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "54",
+    "user_query": "می‌خوام برای برادرم که ایرانسل داره یه شارژ بخرم، شماره‌اش ۰۹۳۵۱۱۱۲۲۳۳ هست، مبلغش رو بذار ۱۰۰ هزار تومن.",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "61",
+    "user_query": "می‌خوام برای پسرم که دانش‌آموزه یه بسته اینترنت حجیم بخرم. شماره‌اش ۰۹۱۲۳۳۳۴۴۵۵ هست. ببین چه گزینه‌هایی داری که قیمت مناسبی داشته باشه.",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "62",
+    "user_query": "لطفاً مبلغ ۵۰ هزار تومان از حساب من کسر کن و یه بسته اینترنت متناسب با این مبلغ برای شماره ۰۹۳۵۰۰۰۱۱۲۲ بخر.",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "64",
+    "user_query": "شارژ ایرانسل ۰۹۰۱۲۳۴۵۶۷۸ مبلغ ۲۰ هزار تومن.",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "65",
+    "user_query": "درخواست پرداخت قبض تلفن ثابت شماره ۰۲۱۴۴۵۵۶۶۷۷ به مبلغ ۱۲۰ هزار تومان با استفاده از کارت بانک ملی شماره ۶۰۳۷۱۱۲۲۳۳۴۴۵۵۶۶، CVV2 123 و تاریخ انقضا ۱۲/۲۴.",
+    "expected_intent": "pay_phone_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "66",
+    "user_query": "شارژ ۵۰ تومنی برای ۰۹۱۲۳۴۵۶۷۸۹ بخر.",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "67",
+    "user_query": "می‌شه اینو تو سیستم بزنید؟",
+    "expected_intent": "check_registration",
+    "variation": "vague"
+  },
+  {
+    "query_id": "70",
+    "user_query": "یه ۱۰۰ هزار تومن سریع به شبا IR11223344556677889900112 بفرست.",
+    "expected_intent": "external_bank_shaba_transfer",
+    "variation": "normal"
+  },
+  {
+    "query_id": "73",
+    "user_query": "خرید بسته اینترنت ۵ گیگ برای ۰۹۳۹۸۸۷۷۶۶۵ با کارت ۶۰۳۷۰۰۰۱۱۱۲۲۲۳۳۳",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "74",
+    "user_query": "سلام، می‌خواستم ببینم برای خط همراه اول چه بسته‌های اینترنتی دارید؟ می‌خوام یه بسته با حجم زیاد بگیرم که تا آخر ماه جواب بده.",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "75",
+    "user_query": "قبض موبایلم رو پرداخت کن. شماره‌ش ۰۹۳۵۱۲۳۴۵۶۷ است. کارت رو هم که داری، همون کارت اصلی رو استفاده کن.",
+    "expected_intent": "pay_phone_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "79",
+    "user_query": "یه خرید آنلاین می‌خوام بکنم، ببینم توی کارت ۵۰۲۲۰۰۱۱۴۴۳۳۸۸۹۹ چقدر پول مونده که بدون استرس سفارش بدم.",
+    "expected_intent": "card_balance",
+    "variation": "normal"
+  },
+  {
+    "query_id": "81",
+    "user_query": "لطفا لیست تراکنس‌های کارت 6037112233445566 رو برای امروز بفرستید",
+    "expected_intent": "card_circulation",
+    "variation": "typo"
+  },
+  {
+    "query_id": "84",
+    "user_query": "لطفا قبض‌های آب و گاز رو از حساب شماره IR12345678901234567890 پرداخت نمایید. شناسه‌های مربوطه رو توی پیام قبلی فرستادم.",
+    "expected_intent": "pay_house_utility_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "86",
+    "user_query": "گردش حساب کارت 6037991234567890 رو نشون بد",
+    "expected_intent": "card_circulation",
+    "variation": "typo"
+  },
+  {
+    "query_id": "92",
+    "user_query": "گردش کارتم 6037009988776655 رو نشون بده لطفن",
+    "expected_intent": "card_circulation",
+    "variation": "typo"
+  },
+  {
+    "query_id": "93",
+    "user_query": "کارت بانکی من توی عابربانک شعبه پاسداران گیر کرد و پس نداد، لطفاً شماره ۶۰۳۷۴۴۵۵۶۶۷۷۸۸۹۹ رو مسدود کنید.",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "98",
+    "user_query": "از کارت ۶۲۹۲۱۲۳۴۵۶۷۸۹۰۱۲ یه بسته نت ۱۰ گیگ برای شماره ۰۹۰۱۴۴۴۵۵۶۶ بخر.",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "102",
+    "user_query": "لطفاً مبلغ ۵۰ هزار تومان از قبض موبایل شماره ۰۹۱۲۳۴۵۶۷۸۹ رو با کارت ۶۰۳۷۹۸۷۶۵۴۳۲۱۰۱۱ پرداخت کن.",
+    "expected_intent": "pay_phone_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "103",
+    "user_query": "یه دست به قبض گاز بزن، شناسه پرداختش ۹۹۸۸۷۷۶۶۵۵۴۴۳۳ هست، از حساب جاری کم کن.",
+    "expected_intent": "pay_house_utility_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "113",
+    "user_query": "کارت بانکی‌مو گم کردم، میشه هر چی کارت به اسم من هست رو مسدود کنید؟ شماره اصلیم ۶۲۹۲۰۰۱۱۲۲۳۳۴۴۵۵ هست.",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "117",
+    "user_query": "اینجانب درخواست دارم کارت بانکی خود به شماره ۶۲۱۵۸۸۹۹۰۰۱۱۲۲۳۳ را به دلیل سرقت کیف پول مسدود نمایید.",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "119",
+    "user_query": "میخام ببینم با این کارتم 6277001122334455 چه تراکنش هایی داشتم",
+    "expected_intent": "card_circulation",
+    "variation": "typo"
+  },
+  {
+    "query_id": "120",
+    "user_query": "پرداخت قسط وام.",
+    "expected_intent": "pay_installments",
+    "variation": "normal"
+  },
+  {
+    "query_id": "131",
+    "user_query": "آقا من یه مبلغی از طرف شرکت داشتم که قرار بود امروز واریز بشه، ولی هنوز خبری نیست. می‌شه یه نگاهی به کارت ۶۲۹۲۷۷۸۸۹۹۰۰۱۱۲۲ بندازی ببینی مبلغی واریز شده یا نه؟",
+    "expected_intent": "card_balance",
+    "variation": "normal"
+  },
+  {
+    "query_id": "135",
+    "user_query": "با سلام، خواهشمندم کارت بانکی شماره ۶۰۳۷۹۸۷۴۵۶۱۲۳۰۴۱ را به دلیل مفقود شدن مسدود نمایید.",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "136",
+    "user_query": "یه چک دارم، باید چیکار کنم؟",
+    "expected_intent": "check_registration",
+    "variation": "vague"
+  },
+  {
+    "query_id": "137",
+    "user_query": "سلام، می‌خواستم قبض آب رو پرداخت کنم. شناسه قبض ۲۳۴۵۶۷۸ و شناسه پرداخت ۹۸۷۶۵۴۳۲۱ هست. مبلغش هم شده ۱۲۵ هزار تومن.",
+    "expected_intent": "pay_house_utility_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "141",
+    "user_query": "قبض گاز رو بده. شناسه: ۴۴۵۵۶۶.",
+    "expected_intent": "pay_house_utility_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "147",
+    "user_query": "ای بابا باز هم قبض برق اومده! هر چی میدم باز میاد. هر چی هستش رو از کارت ۶۰۳۷۰۱۲۳۴۵۶۷۸۹۰ پرداخت کن. شناسه قبض: ۱۱۱۲۲۳۳۴۴.",
+    "expected_intent": "pay_house_utility_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "149",
+    "user_query": "لطفا شماره ۰۹۲۱۸۸۸۹۹۰۰ را به مبلغ ۵۰ هزار تومان با کارت ۶۰۳۷۰۱۲۳۴۵۶۷۸۹۰۱ و CVV2 123 شارژ کن.",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "153",
+    "user_query": "سلام، من می‌خوام اجاره خونه رو پرداخت کنم. لطفاً از حساب جاری من مبلغ ۵ میلیون تومن رو به کارت صاحبخونه که شماره‌اش 6215998765432100 هست واریز کنید.",
+    "expected_intent": "transfer_card_to_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "155",
+    "user_query": "انتقال ۱۵ میلیون تومن از حساب جاری به شماره شبای IR77889900112233445566778 از طریق پایا.",
+    "expected_intent": "external_bank_shaba_transfer",
+    "variation": "normal"
+  },
+  {
+    "query_id": "161",
+    "user_query": "سلام، لطفاً مبلغ ۲۵ میلیون تومن رو برای شهریه دانشگاه به شبا IR44009988776655443322110 ساتنا کنید. ممنونم.",
+    "expected_intent": "external_bank_shaba_transfer",
+    "variation": "normal"
+  },
+  {
+    "query_id": "164",
+    "user_query": "می‌خوام دوباره به همون کارتی که هفته پیش پول ریخته بودم، ۲۰۰ هزار تومن کارت به کارت کنم.",
+    "expected_intent": "transfer_card_to_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "166",
+    "user_query": "می‌خوام یه چیزی رو ثبت کنم.",
+    "expected_intent": "check_registration",
+    "variation": "vague"
+  },
+  {
+    "query_id": "169",
+    "user_query": "مسدود کردن کارت ۶۰۳۷۱۱۱۲۳۳۴۴۵۵۶۶",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "178",
+    "user_query": "لطفاً قبض برق منزل را با شماره شناسایی ۸۷۶۵۴۳۲۱۰ پرداخت نمایید.",
+    "expected_intent": "pay_house_utility_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "180",
+    "user_query": "موجودی کارتم چقدره؟ ۶۲۹۲۵۵۴۴۳۳۲۲۱۱۰۰",
+    "expected_intent": "card_balance",
+    "variation": "normal"
+  },
+  {
+    "query_id": "187",
+    "user_query": "سلام، من یه پیامک تراکنش گرفتم که خودم انجام ندادم. لطفاً کارت شماره ۶۲۹۲۱۱۰۰۲۲۳۳۴۴۵۵ رو سریعاً مسدود کنید تا پولام نپره.",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "197",
+    "user_query": "من الان تو سفرم و نتوم تموم شده، میشه سریع یه بسته ۲ گیگی برای شماره خودم ۰۹۱۲۹۹۹۸۸۷۷ فعال کنی؟ خیلی عجله دارم.",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "198",
+    "user_query": "وای یادم رفت قسط وامم رو بدم! سریعاً مبلغ ۱,۲۰۰,۰۰۰ تومن رو بابت قسط این ماه از کارت ۶۲۹۵۸۷۴۱۲۰۳۳۴۴۵ پرداخت کن تا جریمه نشم.",
+    "expected_intent": "pay_installments",
+    "variation": "normal"
+  },
+  {
+    "query_id": "202",
+    "user_query": "یه بسته ۵ گیگ برای شماره ۰۹۳۵۱۲۳۴۵۶۷ بخر.",
+    "expected_intent": "buy_internet",
+    "variation": "normal"
+  },
+  {
+    "query_id": "206",
+    "user_query": "۵ میلیون پایا کن به IR55667788990011223344556",
+    "expected_intent": "external_bank_shaba_transfer",
+    "variation": "normal"
+  },
+  {
+    "query_id": "213",
+    "user_query": "برای وام ازدواجم یه قسط ۸۰۰ هزار تومنی مونده، لطفاً از حساب پس‌اندازم برداشت کن و پرداختش کن.",
+    "expected_intent": "pay_installments",
+    "variation": "normal"
+  },
+  {
+    "query_id": "214",
+    "user_query": "وای، یادم رفت قبض موبایلم رو پرداخت کنم و الان قطع شده! سریع شماره ۰۹۱۹۸۷۶۵۴۳۲ رو تسویه کن لطفاً.",
+    "expected_intent": "pay_phone_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "217",
+    "user_query": "لطفاً کارت شماره ۶۰۳۷۵۵۶۶۷۷۸۸۹۹۰۰ با CVV2 4521 را مسدود کنید.",
+    "expected_intent": "block_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "219",
+    "user_query": "سلام، می‌خواستم قبض تلفن ثابت شماره ۰۲۱۸۸۴۴۳۳۲۲ رو از طریق حساب جاری‌ام پرداخت کنم. امکانش هست؟",
+    "expected_intent": "pay_phone_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "224",
+    "user_query": "با کارت شماره ۶۲۱۵۸۸۷۷۶۶۵۵۴۴۳۳ مبلغ ۲۵ هزار تومان برای شماره ۰۹۳۹۰۰۰۱۱۲۰ شارژ کن.",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "228",
+    "user_query": "گدش کارت 5031998877665544 مال دیروز رو میخوام",
+    "expected_intent": "card_circulation",
+    "variation": "typo"
+  },
+  {
+    "query_id": "237",
+    "user_query": "برای ثبت چک می‌خواستم...",
+    "expected_intent": "check_registration",
+    "variation": "vague"
+  },
+  {
+    "query_id": "243",
+    "user_query": "چک رو کجا باید وارد کنم؟",
+    "expected_intent": "check_registration",
+    "variation": "vague"
+  },
+  {
+    "query_id": "245",
+    "user_query": "چطوری می‌تونم قبض تلفن خونه رو اینجا پرداخت کنم؟",
+    "expected_intent": "pay_phone_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "254",
+    "user_query": "اون قضیه صیاد چطور شد؟",
+    "expected_intent": "check_registration",
+    "variation": "vague"
+  },
+  {
+    "query_id": "261",
+    "user_query": "خواهشمند است مبلغ ۱۰۰,۰۰۰ تومان اعتبار برای شماره همراه اول ۰۹۱۹۸۷۶۵۴۳۲ از حساب من کسر و شارژ نمایید.",
+    "expected_intent": "buy_charge",
+    "variation": "normal"
+  },
+  {
+    "query_id": "273",
+    "user_query": "می‌خوام قبض برق و آب رو پرداخت کنم. برای برق از حساب ملی و برای آب از حساب پاسارگاد استفاده کن. شناسه برق: ۱۲۳۴۵ و شناسه آب: ۶۷۸۹۰.",
+    "expected_intent": "pay_house_utility_bills",
+    "variation": "normal"
+  },
+  {
+    "query_id": "279",
+    "user_query": "خواهشمند است موجودی حساب مربوط به کارت ۶۰۳۷۱۱۲۰۲۲۳۳۴۴۵۵ را بررسی و اعلام نمایید.",
+    "expected_intent": "card_balance",
+    "variation": "normal"
+  },
+  {
+    "query_id": "281",
+    "user_query": "سریع ۵۰ هزار تومن به کارت 6037000011112222 بزن که عجله دارم.",
+    "expected_intent": "transfer_card_to_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "285",
+    "user_query": "لطفاً مبلغ ۲,۵۰۰,۰۰۰ تومان بابت قسط وام مسکن من را از حساب شماره ۶۰۳۵۰۰۱۲۳۴۵۶۷۸۹ پرداخت نمایید.",
+    "expected_intent": "pay_installments",
+    "variation": "normal"
+  },
+  {
+    "query_id": "291",
+    "user_query": "حقوقم واریز شد، حالا لطفاً ۳ میلیون تومن از حساب جاری‌ام بردار و بابت قسط وام جاری به شماره شبای IR12345678901234567890 پرداخت کن.",
+    "expected_intent": "pay_installments",
+    "variation": "normal"
+  },
+  {
+    "query_id": "293",
+    "user_query": "مبلغ ۳ میلیون و ۴۰۰ هزار تومان از کارت من به شماره کارت 6037112233445566 انتقال یابد.",
+    "expected_intent": "transfer_card_to_card",
+    "variation": "normal"
+  },
+  {
+    "query_id": "114",
+    "user_query": "می‌خوام رمز پویا فعال کنم، باید چیکار کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "286",
+    "user_query": "چند بار رمز رو اشتباه زدم و الان ویندوز لاک شده، باید چیکار کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "170",
+    "user_query": "ببخشید من پیامک تمدید سپرده‌ام رو نگرفتم، چطوری میتنم از شرایطش باخبر بشم؟",
+    "expected_intent": "faq",
+    "variation": "typo"
+  },
+  {
+    "query_id": "294",
+    "user_query": "چطوری می‌تونم از طریق اپلیکیشن نوین بانک درخواست وام بدم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "183",
+    "user_query": "سلام، من یه مبلغی رو با ساتنا فرستادم ولی طرف مقابل می‌گه هنوز نرسیده؛ چطوری می‌تونم پیگیرش بشم و بفهمم تراکنش درست انجام شده؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "195",
+    "user_query": "چرا وقتی می‌خوام با کارت شرکت از کارگزاری خرید کنم، تراکنشم رد میشه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "25",
+    "user_query": "چطوری می‌تونم خطای ۶۲۲۲ موجودی کافی نیست رو موقع عودت وثیقه برطرف کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "4",
+    "user_query": "سلام، سیستمم رو جابجا کردم ولی دیگه به فایل‌های اشتراکی دسترسی ندارم، باید چیکار کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "111",
+    "user_query": "محدودیت انتقال وجه از اپلیکیشن و دستگاه خودپرداز چقدره؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "82",
+    "user_query": "برای مسدود کردن کارت بانکی چه راهکارهایی هست و چه کارهایی باید بکنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "218",
+    "user_query": "انتغال وج به شبای دگه چطوریه",
+    "expected_intent": "faq",
+    "variation": "typo_and_vague"
+  },
+  {
+    "query_id": "260",
+    "user_query": "شعبه کجاسس؟",
+    "expected_intent": "faq",
+    "variation": "typo_and_vague"
+  },
+  {
+    "query_id": "207",
+    "user_query": "برای اطلاعات بیشتر درباره وام آساوام باید با کجا تماس بگیرم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "129",
+    "user_query": "سلام، می‌خواستم بدونم برای فعال کردن پیامک‌های بانکی باید حتماً برم شعبه یا راه دیگه‌ای هم هست؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "247",
+    "user_query": "سلام، می‌خوام رمز عبورم رو بازیابی کنم ولی توی اپلیکیشن گزینه‌اش رو پیدا نمی‌کنم، مشکل از کجاست؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "257",
+    "user_query": "چرا نمی‌تونم پول انتقال بدم؟ هر چی تلاش می‌کنم نمیشه.",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "83",
+    "user_query": "چطوری می‌تونم شماره شبای حسابم رو پیدا کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "209",
+    "user_query": "چرا بعضی از سپرده‌هام توی همراه نوین نمایش داده نمی‌شه؟ چطور می‌تونم تنظیمش کنم که همه حساب‌هام رو ببینم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "55",
+    "user_query": "کارت بانکاقتصاد نوین رو از فوربکس گرفتم ولی به دستم نرسیده، کجا تماص بگیرم؟",
+    "expected_intent": "faq",
+    "variation": "typo"
+  },
+  {
+    "query_id": "5",
+    "user_query": "این ارور follow cod یعنی چی؟ باید کاری برای رفعش انجام بدم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "248",
+    "user_query": "ببخشید، می‌خواستم بدونم الان چه وام‌هایی توی بانک فعال هست و می‌تونم بگیرم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "29",
+    "user_query": "ببخشید، می‌خواستم بدونم لیست شعبه‌های بانک توی اپلیکیشن کجاست؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "78",
+    "user_query": "من موقع انجام تراکنش با خطای follow cod مواجه شدم، دلیلش چیه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "204",
+    "user_query": "برای اینکه مطمئن بشم انتقال وجه ساتنای من موفق بوده و مشکلی نداره، باید با کجا تماس بگیرم و چه چیزی لازم دارم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "284",
+    "user_query": "دارم حقوق‌ها رو واریز می‌کنم ولی ارور calculate میده، دلیلش چیه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "251",
+    "user_query": "یه اتباع می‌تونه چند تا سپرده و کارت بانکی باز کنه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "87",
+    "user_query": "برای استفاده از نوین بانک و ثبت درخواست تسهیلات، حتماً باید برم شعبه یا می‌شه آنلاین انجام داد؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "182",
+    "user_query": "می‌خوام پرونده اعتباری رو ببندم ولی ارور وثیقه نامشخص میده، چیکار کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "8",
+    "user_query": "شارژ خریدم ولی نیومد، پولم کی برمی‌گرده به حسابم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "295",
+    "user_query": "ببخشید، سوابق تراکنش‌های برنامه همراه نوین کجاست که بتونم رسید پرداخت‌های قبلیمو بردارم و اشتراک‌گذاری کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "69",
+    "user_query": "سلام، من چند تا حساب دارم ولی توی اپلیکیشن همراه نوین همه‌شون رو نمی‌بینم، باید چیکار کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "196",
+    "user_query": "سقف انتقال وجه روزانه‌م چقدره و اگه بخوام زیادش کنم باید چیکار کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "22",
+    "user_query": "اعداد پشت کارتم پاک شدن و نمیتونم خرید آنلاین کنم، چیکار باید بکنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "68",
+    "user_query": "برای حساب‌های حقوقی سقف تعداد کارت‌ها چقدره؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "239",
+    "user_query": "برای اینکه کارتم رو ببندم باید چیکار کنم؟ راهی هست که لازم نباشه بیام شعبه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "121",
+    "user_query": "وقتی می‌خوام مبلغ رو آزاد کنم، سیستم میگه مبلغ وارد شده از مبلغ آزادسازی بیشتره و خطا میده. راه حلش چیه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "108",
+    "user_query": "قابلیت اثر انگشت توی برنامه همراه نوین من فعال نیست، راه انداختنش چطوریه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "296",
+    "user_query": "توی بخش ساتنا ارور cour می‌گیرم، چطور بفهمم دلیلش چیه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "57",
+    "user_query": "چطوری تو همراه نوین پول بفرستم بقیه بنکها",
+    "expected_intent": "faq",
+    "variation": "typo_and_vague"
+  },
+  {
+    "query_id": "263",
+    "user_query": "شرایطه سرمایه گذاری تو این صندوقا چیه؟ کجا میتونم ببینم؟",
+    "expected_intent": "faq",
+    "variation": "typo"
+  },
+  {
+    "query_id": "262",
+    "user_query": "چرا واسه تراکنش های زیر ده هزار تومن پیاک نمیگیرم؟ میشه فعالس کنین؟",
+    "expected_intent": "faq",
+    "variation": "typo"
+  },
+  {
+    "query_id": "107",
+    "user_query": "می‌خواستم بدونم شماره شبای من کجاست و از چه راهی می‌تونم پیداش کنم؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "19",
+    "user_query": "سعت کارین",
+    "expected_intent": "faq",
+    "variation": "typo_and_vague"
+  },
+  {
+    "query_id": "229",
+    "user_query": "درباره خبررسانی حسابم سوال داشتم، چطوری میشه؟",
+    "expected_intent": "faq",
+    "variation": "vague"
+  },
+  {
+    "query_id": "249",
+    "user_query": "می‌خوام یه سری از حساب‌های ذخیره شده‌م رو از برنامه همراه نوین حذف کنم، باید برم کدوم بخش؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "96",
+    "user_query": "واسه ورود به سامانه ضمانت نامه گمرکی از چه یوزری باید استافده کنم؟",
+    "expected_intent": "faq",
+    "variation": "typo"
+  },
+  {
+    "query_id": "203",
+    "user_query": "پایا زدم ولی هنوز نرسیده، مگه امروز ساعت خاصی واریز نمیشه؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "176",
+    "user_query": "توی سیستم یه مانده‌ای هست که نمی‌دونم مربوط به چیه، چیکار کنم؟",
+    "expected_intent": "faq",
+    "variation": "vague"
+  },
+  {
+    "query_id": "126",
+    "user_query": "برای عوض کردن شماره همراهی که پیامک‌ها میاد روش، باید حتما برم شعبه یا راه دیگه‌ای هم هست؟",
+    "expected_intent": "faq",
+    "variation": "normal"
+  },
+  {
+    "query_id": "185",
+    "user_query": "چطوری میشه غیرحضوری سپره باز کرد؟",
+    "expected_intent": "faq",
+    "variation": "typo"
+  }
+]
