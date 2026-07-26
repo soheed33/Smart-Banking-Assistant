@@ -1,0 +1,54 @@
+# --- محیط و متغیرهای حساس ---
+.env
+.env.*
+!.env.example
+*.key
+secrets.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- محیط مجازی ---
+venv/
+.venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# --- مدل و چک‌پوینت (حجیم) ---
+# نکته: فایل‌های datasets/*.json,csv,xlsx عمداً commit می‌شوند چون همان
+# دیتاست کوچک و الزامی درس هستند (طبق PDF تمرین باید همراه پروژه باشند).
+*.ckpt
+*.pt
+*.pth
+*.bin
+*.safetensors
+model_cache/
+.cache/
+
+# --- خروجی‌های اجرا ---
+results/*.jsonl
+results/*.json
+!results/.gitkeep
+outputs/
+wandb/
+
+# --- سیستم‌عامل و ادیتور ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# --- Colab / Kaggle ---
+sample_data/
